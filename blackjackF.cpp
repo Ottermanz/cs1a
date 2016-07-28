@@ -13,9 +13,11 @@
 #include <time.h>
 using namespace std;
 
+// initialize function
 int aceCard (int x);
 
-int aceCard (int x) {
+// ace function
+int aceCard (int x) { 
   char b;
   int y;
   cout << "Your first card is 1\n" << endl;
@@ -66,24 +68,8 @@ int main () {
   { card = 10; }
   
   if (card == 1) {
-  aceCard (card);
+  aceCard (card); // function that runs the ace thingy majiger
   }
-
-  // if (card == 1)
-  // { cout << "Your first card is 1\n";
-  //  cout << "\nYou got an ace. Do you want it to be 1 or 11 [a=1/b=11]"; 
-  //  cin.get(ace);
-  //  cin.ignore(1000, '\n');
-  //  
-  //  if (ace == 'a')
-  //  { cout << "You chose 1 \n";
-  //    card = 1;
-  //  }
-  //  if (ace == 'b')
-  //  { cout << "You chose 11 \n";
-  //    card = 11;
-  //  }
-  //}
   
   comb += card; 
   
